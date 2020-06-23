@@ -114,30 +114,11 @@ legend{
 }
 .ada-form-fieldset{
     float: left;
+    width: 50%;
     padding: 0 15px;
     margin-bottom: 30px;
 }
-.ada-form-fieldset--general{
-    width: 50%;
-}
-.ada-form-fieldset--address{
-    width: 50%;
-}
-.ada-form-fieldset--contact{
-    width: 50%;
-    clear: left;
-}
-.ada-form-fieldset--about{
-    width: 50%;
-}
-.ada-form-fieldset--occupation{
-    width: 50%;
-    clear: left;
-}
-.ada-form-fieldset--other{
-    width: 50%;
-}
-.ada-form-fieldset-billing{
+.ada-form-fieldset-billing-check{
     width: 100%;
 }
 .ada-form-fieldset--btns{
@@ -157,24 +138,10 @@ fieldset fieldset{
     border-radius: 10px;
 }
 
-
-    /*.ada-form-row{*/
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*    margin-left: -10px;*/
-/*    margin-right: -10px;*/
-/*    margin-bottom: 15px;*/
-/*}*/
 .ada-form-row:last-child{
     margin-bottom: 0;
 }
 .ada-form-col{
-    /*-ms-flex-preferred-size: 0;*/
-    /*flex-basis: 0;*/
-    /*-ms-flex-positive: 1;*/
-    /*flex-grow: 1;*/
-    /*min-width: 0;*/
-    /*max-width: 100%;*/
     padding: 0 10px;
     margin-bottom: 15px;
 }
@@ -193,6 +160,11 @@ fieldset fieldset{
     color: #000000;
     padding: 10px;
 }
+.txt-ada{
+    height: 120px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    resize: none;
+}
 .select-ada:hover,
 .inp-ada:hover,
 .txt-ada:hover{
@@ -201,21 +173,14 @@ fieldset fieldset{
     transition: border-color 0.3s ease-in-out;
     border: 1px solid #aaa;
 }
-.radioboxes-ada{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    height: 40px;
-}
-.radiobox-ada{
-    margin-right: 15px;
-}
+.radioboxes-ada,
 .checkboxes-ada{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     height: 40px;
 }
+.radiobox-ada,
 .checkbox-ada{
     margin-right: 15px;
 }

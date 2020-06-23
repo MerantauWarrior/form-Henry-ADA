@@ -7,7 +7,7 @@
   <meta name="keywords" content="text, test">
   <meta name="description" content="very long text description">
   <link rel="stylesheet" href="style-v2.css">
-  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="media-v2.css">
   <script src="jquery-3.4.1.min.js"></script>
   <script src="custom.js"></script>
 </head>
@@ -54,13 +54,74 @@
                 <label for="NickName" class="label-ada">Nickname</label>
                 <input type="text" name="NickName" id="NickName" class="inp-ada">
               </div>
+              <div class="ada-form-col">
+                <label for="SSN" class="label-ada">SSN</label>
+                <input type="text" name="Email" id="SSN" class="inp-ada">
+              </div>
             </div>
           </fieldset>
         </div>
 
+        <div class="ada-form-fieldset ada-form-fieldset--contact">
+          <fieldset>
+            <legend>Contact Information</legend>
+            <div class="ada-form-row">
+              <div class="ada-form-col">
+                <label for="Home" class="label-ada">Home Phone</label>
+                <input type="text" name="Home" id="Home" class="inp-ada">
+              </div>
+              <div class="ada-form-col">
+                <label for="Cell" class="label-ada">Cell Phone</label>
+                <input type="text" name="Cell" id="Cell" class="inp-ada">
+              </div>
+              <div class="ada-form-col">
+                <label for="Work" class="label-ada">Work Phone</label>
+                <input type="text" name="Work" id="Work" class="inp-ada">
+              </div>
+              <div class="ada-form-col">
+                <label for="Other" class="label-ada">Other Phone</label>
+                <input type="text" name="Other" id="Other" class="inp-ada">
+              </div>
+              <div class="ada-form-col">
+                <label for="Email" class="label-ada">Email</label>
+                <input type="text" name="Email" id="Email" class="inp-ada">
+              </div>
+              <div class="ada-form-col">
+                <label for="PrefContact" class="label-ada">Preferred Contact Method</label>
+                <select name="PrefContact" id="PrefContact" class="select-ada">
+                  <option value="">
+                  </option>
+                  <option value="Home Phone">Home Phone
+                  </option>
+                  <option value="Work Phone">Work Phone
+                  </option>
+                  <option value="Cell Phone">Cell Phone
+                  </option>
+                  <option value="Other Phone">Other Phone
+                  </option>
+                  <option value="Text Message">Text Message
+                  </option>
+                  <option value="Email">Email
+                  </option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="ada-form-fieldset ada-form-fieldset-billing-check">
+          <div class="ada-form-row">
+            <div class="checkboxes-ada">
+              <label class="checkbox-ada">
+                <input type="checkbox" name="billcheck" id="billcheck">Billing address is different
+              </label>
+            </div>
+          </div>
+        </div>
+
         <div class="ada-form-fieldset ada-form-fieldset--address">
           <fieldset>
-            <legend>Address Information</legend>
+            <legend>Primary Address</legend>
             <div class="ada-form-row">
               <div class="ada-form-col">
                 <label for="Address1" class="label-ada">Address</label>
@@ -189,48 +250,132 @@
           </fieldset>
         </div>
 
-        <div class="ada-form-fieldset ada-form-fieldset--contact">
+        <div class="ada-form-fieldset ada-form-fieldset-billing">
           <fieldset>
-            <legend>Contact Information</legend>
+            <legend>Billing Address</legend>
             <div class="ada-form-row">
               <div class="ada-form-col">
-                <label for="Home" class="label-ada">Home Phone</label>
-                <input type="text" name="Home" id="Home" class="inp-ada">
+                <label for="BillingAddress1" class="label-ada">Address</label>
+                <input type="text" name="BillingAddress1" id="BillingAddress1" class="inp-ada">
               </div>
               <div class="ada-form-col">
-                <label for="Cell" class="label-ada">Cell Phone</label>
-                <input type="text" name="Cell" id="Cell" class="inp-ada">
+                <label for="BillingCity" class="label-ada">City</label>
+                <input type="text" name="BillingCity" id="BillingCity" class="inp-ada">
               </div>
               <div class="ada-form-col">
-                <label for="Work" class="label-ada">Work Phone</label>
-                <input type="text" name="Work" id="Work" class="inp-ada">
-              </div>
-              <div class="ada-form-col">
-                <label for="Other" class="label-ada">Other Phone</label>
-                <input type="text" name="Other" id="Other" class="inp-ada">
-              </div>
-              <div class="ada-form-col">
-                <label for="Email" class="label-ada">Email</label>
-                <input type="text" name="Email" id="Email" class="inp-ada">
-              </div>
-              <div class="ada-form-col">
-                <label for="PrefContact" class="label-ada">Preferred Contact Method</label>
-                <select name="PrefContact" id="PrefContact" class="select-ada">
+                <label for="BillingState" class="label-ada">State</label>
+                <select name="BillingState" id="BillingState" class="select-ada">
                   <option value="">
                   </option>
-                  <option value="Home Phone">Home Phone
+                  <option value="CA" selected="">CA
                   </option>
-                  <option value="Work Phone">Work Phone
+                  <option value="AK">AK
                   </option>
-                  <option value="Cell Phone">Cell Phone
+                  <option value="AL">AL
                   </option>
-                  <option value="Other Phone">Other Phone
+                  <option value="AR">AR
                   </option>
-                  <option value="Text Message">Text Message
+                  <option value="AZ">AZ
                   </option>
-                  <option value="Email">Email
+                  <option value="CO">CO
+                  </option>
+                  <option value="CT">CT
+                  </option>
+                  <option value="DC">DC
+                  </option>
+                  <option value="DE">DE
+                  </option>
+                  <option value="FL">FL
+                  </option>
+                  <option value="GA">GA
+                  </option>
+                  <option value="HI">HI
+                  </option>
+                  <option value="IA">IA
+                  </option>
+                  <option value="ID">ID
+                  </option>
+                  <option value="IL">IL
+                  </option>
+                  <option value="IN">IN
+                  </option>
+                  <option value="KS">KS
+                  </option>
+                  <option value="KY">KY
+                  </option>
+                  <option value="LA">LA
+                  </option>
+                  <option value="MA">MA
+                  </option>
+                  <option value="MD">MD
+                  </option>
+                  <option value="ME">ME
+                  </option>
+                  <option value="MI">MI
+                  </option>
+                  <option value="MN">MN
+                  </option>
+                  <option value="MO">MO
+                  </option>
+                  <option value="MS">MS
+                  </option>
+                  <option value="MT">MT
+                  </option>
+                  <option value="NC">NC
+                  </option>
+                  <option value="ND">ND
+                  </option>
+                  <option value="NE">NE
+                  </option>
+                  <option value="NH">NH
+                  </option>
+                  <option value="NJ">NJ
+                  </option>
+                  <option value="NM">NM
+                  </option>
+                  <option value="NV">NV
+                  </option>
+                  <option value="NY">NY
+                  </option>
+                  <option value="OH">OH
+                  </option>
+                  <option value="OK">OK
+                  </option>
+                  <option value="OR">OR
+                  </option>
+                  <option value="PA">PA
+                  </option>
+                  <option value="RI">RI
+                  </option>
+                  <option value="SC">SC
+                  </option>
+                  <option value="SD">SD
+                  </option>
+                  <option value="TN">TN
+                  </option>
+                  <option value="TX">TX
+                  </option>
+                  <option value="UT">UT
+                  </option>
+                  <option value="VA">VA
+                  </option>
+                  <option value="VI">VI
+                  </option>
+                  <option value="VT">VT
+                  </option>
+                  <option value="WA">WA
+                  </option>
+                  <option value="WI">WI
+                  </option>
+                  <option value="WV">WV
+                  </option>
+                  <option value="WY">WY
                   </option>
                 </select>
+              </div>
+              <div class="ada-form-col">
+                <label for="BillingZipCode" class="label-ada">Zip</label>
+                <input type="text" name="BillingZipCode" id="BillingZipCode" class="inp-ada">
               </div>
             </div>
           </fieldset>
@@ -238,12 +383,8 @@
 
         <div class="ada-form-fieldset ada-form-fieldset--about">
           <fieldset>
-            <legend>About Patient</legend>
+            <legend>Demographics</legend>
             <div class="ada-form-row">
-              <div class="ada-form-col">
-                <label for="SSN" class="label-ada">SSN</label>
-                <input type="text" name="Email" id="SSN" class="inp-ada">
-              </div>
               <div class="ada-form-col">
                 <label for="Bday" class="label-ada">Birthday (mm/dd/yyyy)</label>
                 <input type="text" name="Bday" id="Bday" class="inp-ada">
@@ -292,7 +433,7 @@
 
         <div class="ada-form-fieldset ada-form-fieldset--occupation">
           <fieldset>
-            <legend>Occupation Information</legend>
+            <legend>Occupation</legend>
             <div class="ada-form-row">
               <div class="ada-form-col">
                 <label for="Occupation" class="label-ada">Occupation</label>
@@ -322,26 +463,14 @@
 
         <div class="ada-form-fieldset ada-form-fieldset--other">
           <fieldset>
-            <legend>Other Information</legend>
+            <legend>Other</legend>
             <div class="ada-form-row">
               <div class="ada-form-col">
                 <label for="misc" class="label-ada">Other information, (Ex: Guardian name)</label>
-                <input type="text" name="misc" id="misc" class="inp-ada">
+                <textarea name="misc" id="misc" class="txt-ada"></textarea>
               </div>
             </div>
           </fieldset>
-        </div>
-
-        <div class="ada-form-fieldset ada-form-fieldset-billing">
-          <div class="ada-form-row">
-            <div class="ada-form-col">
-              <div class="checkboxes-ada">
-                <label class="checkbox-ada">
-                  <input type="checkbox" name="billcheck" id="billcheck">Billing address is different
-                </label>
-              </div>
-            </div>
-          </div>
         </div>
 
         <div class="ada-form-fieldset ada-form-fieldset--btns">
