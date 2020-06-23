@@ -118,9 +118,8 @@ legend{
     padding: 0 15px;
     margin-bottom: 30px;
 }
-.ada-form-fieldset-billing-check{
-    width: 100%;
-}
+.ada-form-fieldset-billing-check,
+.ada-form-fieldset--other,
 .ada-form-fieldset--btns{
     width: 100%;
 }
