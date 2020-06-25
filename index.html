@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Form</title>
+  <title>Form v1</title>
   <meta name="keywords" content="text, test">
   <meta name="description" content="very long text description">
   <link rel="stylesheet" href="style.css">
@@ -15,307 +15,1160 @@
 
 <div class="page-form">
   <form action="" method="get" class="ada-form">
-    <div class="ada-form-steps">
-      <a href="#" class="ada-form-step ada-form-step_active" title="Demographics">Demographics</a>
-      <a href="#" class="ada-form-step" title="Medical History">Medical History</a>
-      <a href="#" class="ada-form-step" title="Complete Check-in">Complete Check-in</a>
+
+    <div class="ada-form__logo">
+      <a href="#" class="ada-form__logo-link">
+        <img src="capitol-eye-care-center-logo-redraw.png" alt="">
+      </a>
     </div>
+
     <div class="ada-form__section">
       <fieldset>
         <legend>Patient Information</legend>
-        <div class="ada-form-row">
-          <div class="ada-form-col">
-            <label for="Title" class="label-ada">Title</label>
-            <select name="Title" id="Title" class="select-ada">
-              <option value=""></option>
-              <option value="Mr.">Mr.</option>
-              <option value="Mrs.">Mrs.</option>
-              <option value="Ms.">Ms.</option>
-              <option value="Dr.">Dr.</option>
-              <option value="Rev.">Rev.</option>
-            </select>
+        <div class="ada-form__fieldsets">
+          <div class="ada-form-fieldset">
+            <fieldset>
+              <legend>General Information</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <label for="Title" class="label-ada">Title</label>
+                  <select name="Title" id="Title" class="select-ada">
+                    <option value=""></option>
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mrs.">Mrs.</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Dr.">Dr.</option>
+                    <option value="Rev.">Rev.</option>
+                  </select>
+                </div>
+                <div class="ada-form-col">
+                  <label for="First" class="label-ada">First</label>
+                  <input type="text" name="First" id="First" class="inp-ada" required aria-required="true">
+                </div>
+                <div class="ada-form-col">
+                  <label for="Middle" class="label-ada">MI</label>
+                  <input type="text" name="Middle" id="Middle" class="inp-ada">
+                </div>
+                <div class="ada-form-col">
+                  <label for="Last" class="label-ada">Last</label>
+                  <input type="text" name="Last" id="Last" class="inp-ada">
+                </div>
+                <div class="ada-form-col">
+                  <label for="NickName" class="label-ada">Nickname</label>
+                  <input type="text" name="NickName" id="NickName" class="inp-ada">
+                </div>
+                <div class="ada-form-col">
+                  <label for="SSN" class="label-ada">SSN</label>
+                  <input type="text" name="Email" id="SSN" class="inp-ada">
+                </div>
+              </div>
+            </fieldset>
           </div>
-          <div class="ada-form-col">
-            <label for="First" class="label-ada">First</label>
-            <input type="text" name="First" id="First" class="inp-ada" required aria-required="true">
+
+          <div class="ada-form-fieldset">
+            <fieldset>
+              <legend>Contact Information</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <label for="Home" class="label-ada">Home Phone</label>
+                  <input type="text" name="Home" id="Home" class="inp-ada">
+                </div>
+                <div class="ada-form-col">
+                  <label for="Cell" class="label-ada">Cell Phone</label>
+                  <input type="text" name="Cell" id="Cell" class="inp-ada">
+                </div>
+                <div class="ada-form-col">
+                  <label for="Work" class="label-ada">Work Phone</label>
+                  <input type="text" name="Work" id="Work" class="inp-ada">
+                </div>
+                <div class="ada-form-col">
+                  <label for="Other" class="label-ada">Other Phone</label>
+                  <input type="text" name="Other" id="Other" class="inp-ada">
+                </div>
+                <div class="ada-form-col">
+                  <label for="Email" class="label-ada">Email</label>
+                  <input type="text" name="Email" id="Email" class="inp-ada">
+                </div>
+                <div class="ada-form-col">
+                  <label for="PrefContact" class="label-ada">Preferred Contact Method</label>
+                  <select name="PrefContact" id="PrefContact" class="select-ada">
+                    <option value="">
+                    </option>
+                    <option value="Home Phone">Home Phone
+                    </option>
+                    <option value="Work Phone">Work Phone
+                    </option>
+                    <option value="Cell Phone">Cell Phone
+                    </option>
+                    <option value="Other Phone">Other Phone
+                    </option>
+                    <option value="Text Message">Text Message
+                    </option>
+                    <option value="Email">Email
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
           </div>
-          <div class="ada-form-col">
-            <label for="First" class="label-ada">MI</label>
-            <input type="text" name="Middle" id="Middle" class="inp-ada">
-          </div>
-          <div class="ada-form-col">
-            <label for="Last" class="label-ada">Last</label>
-            <input type="text" name="Last" id="Last" class="inp-ada">
-          </div>
-          <div class="ada-form-col">
-            <label for="NickName" class="label-ada">Nickname</label>
-            <input type="text" name="NickName" id="NickName" class="inp-ada">
-          </div>
-        </div>
-        <div class="ada-form-row">
-          <div class="ada-form-col">
-            <label for="Address1" class="label-ada">Address</label>
-            <input type="text" name="Address1" id="Address1" class="inp-ada">
-          </div>
-          <div class="ada-form-col">
-            <label for="City" class="label-ada">City</label>
-            <input type="text" name="City" id="City" class="inp-ada">
-          </div>
-          <div class="ada-form-col">
-            <label for="State" class="label-ada">State</label>
-            <select name="State" id="State" class="select-ada">
-              <option value="">
-              </option>
-              <option value="CA" selected="">CA
-              </option>
-              <option value="AK">AK
-              </option>
-              <option value="AL">AL
-              </option>
-              <option value="AR">AR
-              </option>
-              <option value="AZ">AZ
-              </option>
-              <option value="CO">CO
-              </option>
-              <option value="CT">CT
-              </option>
-              <option value="DC">DC
-              </option>
-              <option value="DE">DE
-              </option>
-              <option value="FL">FL
-              </option>
-              <option value="GA">GA
-              </option>
-              <option value="HI">HI
-              </option>
-              <option value="IA">IA
-              </option>
-              <option value="ID">ID
-              </option>
-              <option value="IL">IL
-              </option>
-              <option value="IN">IN
-              </option>
-              <option value="KS">KS
-              </option>
-              <option value="KY">KY
-              </option>
-              <option value="LA">LA
-              </option>
-              <option value="MA">MA
-              </option>
-              <option value="MD">MD
-              </option>
-              <option value="ME">ME
-              </option>
-              <option value="MI">MI
-              </option>
-              <option value="MN">MN
-              </option>
-              <option value="MO">MO
-              </option>
-              <option value="MS">MS
-              </option>
-              <option value="MT">MT
-              </option>
-              <option value="NC">NC
-              </option>
-              <option value="ND">ND
-              </option>
-              <option value="NE">NE
-              </option>
-              <option value="NH">NH
-              </option>
-              <option value="NJ">NJ
-              </option>
-              <option value="NM">NM
-              </option>
-              <option value="NV">NV
-              </option>
-              <option value="NY">NY
-              </option>
-              <option value="OH">OH
-              </option>
-              <option value="OK">OK
-              </option>
-              <option value="OR">OR
-              </option>
-              <option value="PA">PA
-              </option>
-              <option value="RI">RI
-              </option>
-              <option value="SC">SC
-              </option>
-              <option value="SD">SD
-              </option>
-              <option value="TN">TN
-              </option>
-              <option value="TX">TX
-              </option>
-              <option value="UT">UT
-              </option>
-              <option value="VA">VA
-              </option>
-              <option value="VI">VI
-              </option>
-              <option value="VT">VT
-              </option>
-              <option value="WA">WA
-              </option>
-              <option value="WI">WI
-              </option>
-              <option value="WV">WV
-              </option>
-              <option value="WY">WY
-              </option>
-            </select>
-          </div>
-          <div class="ada-form-col">
-            <label for="ZipCode" class="label-ada">Zip</label>
-            <input type="text" name="ZipCode" id="ZipCode" class="inp-ada">
-          </div>
-        </div>
-        <div class="ada-form-row">
-          <div class="ada-form-col">
-            <label for="Home" class="label-ada">Home Phone</label>
-            <input type="text" name="Home" id="Home" class="inp-ada">
-          </div>
-          <div class="ada-form-col">
-            <label for="Cell" class="label-ada">Cell Phone</label>
-            <input type="text" name="Cell" id="Cell" class="inp-ada">
-          </div>
-          <div class="ada-form-col">
-            <label for="Work" class="label-ada">Work Phone</label>
-            <input type="text" name="Work" id="Work" class="inp-ada">
-          </div>
-          <div class="ada-form-col">
-            <label for="Other" class="label-ada">Other Phone</label>
-            <input type="text" name="Other" id="Other" class="inp-ada">
-          </div>
-        </div>
-        <div class="ada-form-row">
-          <div class="ada-form-col">
-            <label for="Email" class="label-ada">Email</label>
-            <input type="text" name="Email" id="Email" class="inp-ada">
-          </div>
-          <div class="ada-form-col">
-            <label for="PrefContact" class="label-ada">Preferred Contact Method</label>
-            <select name="PrefContact" id="PrefContact" class="select-ada">
-              <option value="">
-              </option>
-              <option value="Home Phone">Home Phone
-              </option>
-              <option value="Work Phone">Work Phone
-              </option>
-              <option value="Cell Phone">Cell Phone
-              </option>
-              <option value="Other Phone">Other Phone
-              </option>
-              <option value="Text Message">Text Message
-              </option>
-              <option value="Email">Email
-              </option>
-            </select>
-          </div>
-        </div>
-        <div class="ada-form-row">
-          <div class="ada-form-col">
-            <label for="SSN" class="label-ada">SSN</label>
-            <input type="text" name="Email" id="SSN" class="inp-ada">
-          </div>
-          <div class="ada-form-col">
-            <label for="Bday" class="label-ada">Birthday (mm/dd/yyyy)</label>
-            <input type="text" name="Bday" id="Bday" class="inp-ada">
-          </div>
-          <div class="ada-form-col">
-            <label for="MStatus" class="label-ada">Marital Status</label>
-            <select name="MStatus" id="MStatus" class="select-ada">
-              <option value="">
-              </option>
-              <option value="A">Annulled
-              </option>
-              <option value="D">Divorced
-              </option>
-              <option value="T">Domestic partner
-              </option>
-              <option value="I">Interlocutory
-              </option>
-              <option value="L">Legally Separated
-              </option>
-              <option value="M">Married
-              </option>
-              <option value="S">Never Married
-              </option>
-              <option value="P">Polygamous
-              </option>
-              <option value="W">Widowed
-              </option>
-            </select>
-          </div>
-          <div class="ada-form-col">
-            <label for="Email" class="label-ada">Sex</label>
-            <div class="radioboxes-ada">
-              <label class="radiobox-ada">
-                <input type="radio" name="sex" value="M">
-                Male
-              </label>
-              <label class="radiobox-ada">
-                <input type="radio" name="sex" value="F">
-                Female
-              </label>
+
+          <div class="ada-form-fieldset ada-form-fieldset--full">
+            <div class="ada-form-row">
+              <div class="checkboxes-ada">
+                <label class="checkbox-ada">
+                  <input type="checkbox" name="billcheck" id="billcheck">Billing address is different
+                </label>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="ada-form-row">
-          <div class="ada-form-col">
-            <label for="Occupation" class="label-ada">Occupation</label>
-            <input type="text" name="Occupation" id="Occupation" class="inp-ada">
+
+          <div class="ada-form-fieldset">
+            <fieldset>
+              <legend>Primary Address</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <label for="Address1" class="label-ada">Address</label>
+                  <input type="text" name="Address1" id="Address1" class="inp-ada">
+                </div>
+                <div class="ada-form-col">
+                  <label for="City" class="label-ada">City</label>
+                  <input type="text" name="City" id="City" class="inp-ada">
+                </div>
+                <div class="ada-form-col">
+                  <label for="State" class="label-ada">State</label>
+                  <select name="State" id="State" class="select-ada">
+                    <option value="">
+                    </option>
+                    <option value="CA" selected="">CA
+                    </option>
+                    <option value="AK">AK
+                    </option>
+                    <option value="AL">AL
+                    </option>
+                    <option value="AR">AR
+                    </option>
+                    <option value="AZ">AZ
+                    </option>
+                    <option value="CO">CO
+                    </option>
+                    <option value="CT">CT
+                    </option>
+                    <option value="DC">DC
+                    </option>
+                    <option value="DE">DE
+                    </option>
+                    <option value="FL">FL
+                    </option>
+                    <option value="GA">GA
+                    </option>
+                    <option value="HI">HI
+                    </option>
+                    <option value="IA">IA
+                    </option>
+                    <option value="ID">ID
+                    </option>
+                    <option value="IL">IL
+                    </option>
+                    <option value="IN">IN
+                    </option>
+                    <option value="KS">KS
+                    </option>
+                    <option value="KY">KY
+                    </option>
+                    <option value="LA">LA
+                    </option>
+                    <option value="MA">MA
+                    </option>
+                    <option value="MD">MD
+                    </option>
+                    <option value="ME">ME
+                    </option>
+                    <option value="MI">MI
+                    </option>
+                    <option value="MN">MN
+                    </option>
+                    <option value="MO">MO
+                    </option>
+                    <option value="MS">MS
+                    </option>
+                    <option value="MT">MT
+                    </option>
+                    <option value="NC">NC
+                    </option>
+                    <option value="ND">ND
+                    </option>
+                    <option value="NE">NE
+                    </option>
+                    <option value="NH">NH
+                    </option>
+                    <option value="NJ">NJ
+                    </option>
+                    <option value="NM">NM
+                    </option>
+                    <option value="NV">NV
+                    </option>
+                    <option value="NY">NY
+                    </option>
+                    <option value="OH">OH
+                    </option>
+                    <option value="OK">OK
+                    </option>
+                    <option value="OR">OR
+                    </option>
+                    <option value="PA">PA
+                    </option>
+                    <option value="RI">RI
+                    </option>
+                    <option value="SC">SC
+                    </option>
+                    <option value="SD">SD
+                    </option>
+                    <option value="TN">TN
+                    </option>
+                    <option value="TX">TX
+                    </option>
+                    <option value="UT">UT
+                    </option>
+                    <option value="VA">VA
+                    </option>
+                    <option value="VI">VI
+                    </option>
+                    <option value="VT">VT
+                    </option>
+                    <option value="WA">WA
+                    </option>
+                    <option value="WI">WI
+                    </option>
+                    <option value="WV">WV
+                    </option>
+                    <option value="WY">WY
+                    </option>
+                  </select>
+                </div>
+                <div class="ada-form-col">
+                  <label for="ZipCode" class="label-ada">Zip</label>
+                  <input type="text" name="ZipCode" id="ZipCode" class="inp-ada">
+                </div>
+              </div>
+            </fieldset>
           </div>
-          <div class="ada-form-col">
-            <label for="eSchool" class="label-ada">Employer / School Name</label>
-            <input type="text" name="eSchool" id="eSchool" class="inp-ada">
+
+          <div class="ada-form-fieldset">
+            <fieldset>
+              <legend>Billing Address</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <label for="bAddress1" class="label-ada">Address</label>
+                  <input type="text" name="bAddress1" id="bAddress1" class="inp-ada">
+                </div>
+                <div class="ada-form-col">
+                  <label for="bCity" class="label-ada">City</label>
+                  <input type="text" name="bCity" id="bCity" class="inp-ada">
+                </div>
+                <div class="ada-form-col">
+                  <label for="bState" class="label-ada">State</label>
+                  <select name="bState" id="bState" class="select-ada">
+                    <option value="">
+                    </option>
+                    <option value="CA" selected="">CA
+                    </option>
+                    <option value="AK">AK
+                    </option>
+                    <option value="AL">AL
+                    </option>
+                    <option value="AR">AR
+                    </option>
+                    <option value="AZ">AZ
+                    </option>
+                    <option value="CO">CO
+                    </option>
+                    <option value="CT">CT
+                    </option>
+                    <option value="DC">DC
+                    </option>
+                    <option value="DE">DE
+                    </option>
+                    <option value="FL">FL
+                    </option>
+                    <option value="GA">GA
+                    </option>
+                    <option value="HI">HI
+                    </option>
+                    <option value="IA">IA
+                    </option>
+                    <option value="ID">ID
+                    </option>
+                    <option value="IL">IL
+                    </option>
+                    <option value="IN">IN
+                    </option>
+                    <option value="KS">KS
+                    </option>
+                    <option value="KY">KY
+                    </option>
+                    <option value="LA">LA
+                    </option>
+                    <option value="MA">MA
+                    </option>
+                    <option value="MD">MD
+                    </option>
+                    <option value="ME">ME
+                    </option>
+                    <option value="MI">MI
+                    </option>
+                    <option value="MN">MN
+                    </option>
+                    <option value="MO">MO
+                    </option>
+                    <option value="MS">MS
+                    </option>
+                    <option value="MT">MT
+                    </option>
+                    <option value="NC">NC
+                    </option>
+                    <option value="ND">ND
+                    </option>
+                    <option value="NE">NE
+                    </option>
+                    <option value="NH">NH
+                    </option>
+                    <option value="NJ">NJ
+                    </option>
+                    <option value="NM">NM
+                    </option>
+                    <option value="NV">NV
+                    </option>
+                    <option value="NY">NY
+                    </option>
+                    <option value="OH">OH
+                    </option>
+                    <option value="OK">OK
+                    </option>
+                    <option value="OR">OR
+                    </option>
+                    <option value="PA">PA
+                    </option>
+                    <option value="RI">RI
+                    </option>
+                    <option value="SC">SC
+                    </option>
+                    <option value="SD">SD
+                    </option>
+                    <option value="TN">TN
+                    </option>
+                    <option value="TX">TX
+                    </option>
+                    <option value="UT">UT
+                    </option>
+                    <option value="VA">VA
+                    </option>
+                    <option value="VI">VI
+                    </option>
+                    <option value="VT">VT
+                    </option>
+                    <option value="WA">WA
+                    </option>
+                    <option value="WI">WI
+                    </option>
+                    <option value="WV">WV
+                    </option>
+                    <option value="WY">WY
+                    </option>
+                  </select>
+                </div>
+                <div class="ada-form-col">
+                  <label for="bZipCode" class="label-ada">Zip</label>
+                  <input type="text" name="bZipCode" id="bZipCode" class="inp-ada">
+                </div>
+              </div>
+            </fieldset>
           </div>
-        </div>
-        <div class="ada-form-row">
-          <div class="ada-form-col">
-            <label class="label-ada">Employment Status</label>
-            <div class="checkboxes-ada">
-              <label class="checkbox-ada">
-                <input type="checkbox" name="employed" id="employed">Employed
-              </label>
-              <label class="checkbox-ada">
-                <input type="checkbox" name="fulltime" id="fulltime">F/T Student
-              </label>
-              <label class="checkbox-ada">
-                <input type="checkbox" name="parttime" id="parttime">P/T Student
-              </label>
-            </div>
+
+          <div class="ada-form-fieldset">
+            <fieldset>
+              <legend>Demographics</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <label for="Bday" class="label-ada">Birthday (mm/dd/yyyy)</label>
+                  <input type="text" name="Bday" id="Bday" class="inp-ada">
+                </div>
+                <div class="ada-form-col">
+                  <label for="MStatus" class="label-ada">Marital Status</label>
+                  <select name="MStatus" id="MStatus" class="select-ada">
+                    <option value="">
+                    </option>
+                    <option value="A">Annulled
+                    </option>
+                    <option value="D">Divorced
+                    </option>
+                    <option value="T">Domestic partner
+                    </option>
+                    <option value="I">Interlocutory
+                    </option>
+                    <option value="L">Legally Separated
+                    </option>
+                    <option value="M">Married
+                    </option>
+                    <option value="S">Never Married
+                    </option>
+                    <option value="P">Polygamous
+                    </option>
+                    <option value="W">Widowed
+                    </option>
+                  </select>
+                </div>
+                <div class="ada-form-col">
+                  <label class="label-ada">Sex</label>
+                  <div class="radioboxes-ada">
+                    <label class="radiobox-ada">
+                      <input type="radio" name="sex" value="M">
+                      Male
+                    </label>
+                    <label class="radiobox-ada">
+                      <input type="radio" name="sex" value="F">
+                      Female
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
           </div>
-        </div>
-        <div class="ada-form-row">
-          <div class="ada-form-col">
-            <label for="misc" class="label-ada">Other information, (Ex: Guardian name)</label>
-            <input type="text" name="misc" id="misc" class="inp-ada">
+
+          <div class="ada-form-fieldset">
+            <fieldset>
+              <legend>Occupation</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <label for="Occupation" class="label-ada">Occupation</label>
+                  <input type="text" name="Occupation" id="Occupation" class="inp-ada">
+                </div>
+                <div class="ada-form-col">
+                  <label for="eSchool" class="label-ada">Employer / School Name</label>
+                  <input type="text" name="eSchool" id="eSchool" class="inp-ada">
+                </div>
+                <div class="ada-form-col">
+                  <label class="label-ada">Employment Status</label>
+                  <div class="checkboxes-ada">
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="employed" id="employed">Employed
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="fulltime" id="fulltime">F/T Student
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="parttime" id="parttime">P/T Student
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
           </div>
-        </div>
-        <div class="ada-form-row">
-          <div class="ada-form-col">
-            <div class="checkboxes-ada">
-              <label class="checkbox-ada">
-                <input type="checkbox" name="billcheck" id="billcheck">Billing address is different
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="ada-form-row">
-          <div class="ada-form-col">
-            <button class="btn-control" type="button">Next</button>
+
+          <div class="ada-form-fieldset ada-form-fieldset--full">
+            <fieldset>
+              <legend>Other</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <label for="misc" class="label-ada">Other information, (Ex: Guardian name)</label>
+                  <textarea name="misc" id="misc" class="txt-ada"></textarea>
+                </div>
+                <div class="ada-form-col">
+                  <label for="mc_6756" class="label-ada">Emergency Contact Name (required)</label>
+                  <input type="text" name="mc_6756" id="mc_6756" class="inp-ada" required>
+                </div>
+                <div class="ada-form-col">
+                  <label for="mc_6757" class="label-ada">Emergency Contact Phone (required)</label>
+                  <input type="text" name="mc_6757" id="mc_6757" class="inp-ada" required>
+                </div>
+              </div>
+            </fieldset>
           </div>
         </div>
       </fieldset>
     </div>
+
+    <div class="ada-form__section">
+      <fieldset>
+        <legend>Are you experiencing or have been diagnosed with any of the following?</legend>
+        <div class="ada-form__fieldsets">
+          <div class="ada-form-fieldset ada-form-fieldset--third">
+            <fieldset>
+              <legend>General</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <div class="checkbox-ada-full">
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_181_med" value="none">None
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_181_med" value="fatigue">Fatigue
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_181_med" value="fever">Fever
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_181_med" value="weight gain">Weight Gain
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_181_med" value="weight loss">Weight Loss
+                    </label>
+                    <label class="checkbox-ada checkbox-ada-w-inp">
+                      <input type="checkbox" name="mc_181_med">Other<input type="text" name="mc_181_med"
+                                                                           class="inp-ada">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset ada-form-fieldset--third">
+            <fieldset>
+              <legend>Illness or pain</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <div class="checkbox-ada-full">
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_188_med" value="none">None
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_188_med" value="dry throat / mouth">Dry throat / mouth
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_188_med" value="headache">Headache
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_188_med" value="sleep apnea">Sleep apnea
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_188_med" value="arthritis">Arthritis
+                    </label>
+                    <label class="checkbox-ada checkbox-ada-w-inp">
+                      <input type="checkbox" name="mc_188_med">Other<input type="text" name="mc_188_med"
+                                                                           class="inp-ada">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset ada-form-fieldset--third">
+            <fieldset>
+              <legend>Cardiovascular conditions</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <div class="checkbox-ada-full">
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_189_med" value="none">None
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_189_med" value="heart disease">Heart disease
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_189_med" value="high cholesterol">High Cholesterol
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_189_med" value="hypertension">Hypertension
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_189_med" value="stroke">Stroke
+                    </label>
+                    <label class="checkbox-ada checkbox-ada-w-inp">
+                      <input type="checkbox" name="mc_189_med">Other<input type="text" name="mc_189_med"
+                                                                           class="inp-ada">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset ada-form-fieldset--third">
+            <fieldset>
+              <legend>Respiratory conditions</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <div class="checkbox-ada-full">
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_190_med" value="none">None
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_190_med" value="asthma">Asthma
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_190_med" value="emphysema">Emphysema
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_190_med" value="chronic cough">Chronic cough
+                    </label>
+                    <label class="checkbox-ada checkbox-ada-w-inp">
+                      <input type="checkbox" name="mc_190_med">Other<input type="text" name="mc_190_med"
+                                                                           class="inp-ada">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset ada-form-fieldset--third">
+            <fieldset>
+              <legend>Mental disorders</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <div class="checkbox-ada-full">
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_197_med" value="none">None
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_197_med" value="anxiety">Anxiety
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_197_med" value="bipolar">Bipolar
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_197_med" value="depression">Depression
+                    </label>
+                    <label class="checkbox-ada checkbox-ada-w-inp">
+                      <input type="checkbox" name="mc_197_med">Other<input type="text" name="mc_197_med"
+                                                                           class="inp-ada">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset ada-form-fieldset--third">
+            <fieldset>
+              <legend>Endocrine system disorders</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <div class="checkbox-ada-full">
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_198_med" value="none">None
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_198_med" value="diabetes">Diabetes
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_198_med" value="hypothyroid">Hypothyroid
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_198_med" value="hyperthoyroid">Hyperthoyroid
+                    </label>
+                    <label class="checkbox-ada checkbox-ada-w-inp">
+                      <input type="checkbox" name="mc_198_med">Other<input type="text" name="mc_198_med"
+                                                                           class="inp-ada">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset ada-form-fieldset--third">
+            <fieldset>
+              <legend>Urinary conditions</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <div class="checkbox-ada-full">
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_193_med" value="none">None
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_193_med" value="painful urination">Painful urination
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_193_med" value="blood in urine">Blood in urine
+                    </label>
+                    <label class="checkbox-ada checkbox-ada-w-inp">
+                      <input type="checkbox" name="mc_193_med">Other<input type="text" name="mc_193_med"
+                                                                           class="inp-ada">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset ada-form-fieldset--third">
+            <fieldset>
+              <legend>Muscular system disorders</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <div class="checkbox-ada-full">
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_194_med" value="none">None
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_194_med" value="pain/tenderness">Pain/tenderness
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_194_med" value="weakness">Weakness
+                    </label>
+                    <label class="checkbox-ada checkbox-ada-w-inp">
+                      <input type="checkbox" name="mc_194_med">Other<input type="text" name="mc_194_med"
+                                                                           class="inp-ada">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset ada-form-fieldset--third">
+            <fieldset>
+              <legend>Digestive system conditions</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <div class="checkbox-ada-full">
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_240_med" value="none">None
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_240_med" value="acid reflux">Acid reflux
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_240_med" value="ibs">Inflamatory Bowel Syndrome
+                    </label>
+                    <label class="checkbox-ada checkbox-ada-w-inp">
+                      <input type="checkbox" name="mc_240_med">Other<input type="text" name="mc_240_med"
+                                                                           class="inp-ada">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset ada-form-fieldset--third">
+            <fieldset>
+              <legend>Skin conditions</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <div class="checkbox-ada-full">
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_195_med" value="none">None
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_195_med" value="psoriasis">Psoriasis
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_195_med" value="rosacea">Rosacea
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_195_med" value="dermatitis">Allergic dermatitis
+                    </label>
+                    <label class="checkbox-ada checkbox-ada-w-inp">
+                      <input type="checkbox" name="mc_195_med">Other<input type="text" name="mc_195_med"
+                                                                           class="inp-ada">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset ada-form-fieldset--third">
+            <fieldset>
+              <legend>Nervous system conditions</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <div class="checkbox-ada-full">
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_196_med" value="none">None
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_196_med" value="memory problems">Memory problems
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_196_med" value="numbness, paralysis">Numbness, paralysis
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_196_med" value="tremors">Tremors
+                    </label>
+                    <label class="checkbox-ada checkbox-ada-w-inp">
+                      <input type="checkbox" name="mc_196_med">Other<input type="text" name="mc_196_med"
+                                                                           class="inp-ada">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset ada-form-fieldset--third">
+            <fieldset>
+              <legend>Reproductive system disorders</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <div class="checkbox-ada-full">
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_200_med" value="none">None
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_200_med" value="breast cancer">Breast cancer
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_200_med" value="prostate cancer">Prostate cancer
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_200_med" value="ovarian cancer">Ovarian cancer
+                    </label>
+                    <label class="checkbox-ada checkbox-ada-w-inp">
+                      <input type="checkbox" name="mc_200_med">Other<input type="text" name="mc_200_med"
+                                                                           class="inp-ada">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset ada-form-fieldset--third">
+            <fieldset>
+              <legend>Blood / Lymphatic disorders</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <div class="checkbox-ada-full">
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_199_med" value="none">None
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_199_med" value="anemia">Anemia
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_199_med" value="hx of blood loss">History of blood loss
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_199_med" value="cuts slow to clot">Cuts slow to clot
+                    </label>
+                    <label class="checkbox-ada checkbox-ada-w-inp">
+                      <input type="checkbox" name="mc_199_med">Other<input type="text" name="mc_199_med"
+                                                                           class="inp-ada">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset ada-form-fieldset--two-third">
+            <fieldset>
+              <legend>Bad Habits</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col ada-form-col--half">
+                  <label for="medrecdropdown" class="label-ada">Do you smoke?</label>
+                  <select name="mc_-31" id="medrecdropdown" class="select-ada">
+                    <option value="">Please select</option>
+                    <option value="Never smoker (<100 cigs equiv)">Never smoker</option>
+                    <option value="Former smoker (no longer smokes)">Former smoker</option>
+                    <option value="Current some day smoker (not daily)">Current occasional smoker</option>
+                    <option value="Light smoker (<10 cigs/day)">Light smoker (less than 10 cigs/day)</option>
+                    <option value="Heavy smoker (>10 cigs/day)">Heavy smoker (more than 10 cigs/day)</option>
+                  </select>
+                </div>
+                <div class="ada-form-col ada-form-col--half">
+                  <label for="mc_231" class="label-ada">Do you drink alcohold daily?</label>
+                  <select name="mc_231" id="mc_231" class="select-ada">
+                    <option value="">Please select</option>
+                    <option value="No">No</option>
+                    <option value="drink alc daily">Yes</option>
+                  </select>
+                </div>
+                <div class="ada-form-col ada-form-col--half">
+                  <label for="mc_234" class="label-ada">Do you use recreational drugs?</label>
+                  <select name="mc_234" id="mc_234" class="select-ada">
+                    <option value="">Please select</option>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset">
+            <fieldset>
+              <legend>Please list ALL medications you are taking</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <label for="mc_3644" class="label-ada">type none, if not taking any medications</label>
+                  <textarea name="mc_3644" id="mc_3644" class="txt-ada"></textarea>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset">
+            <fieldset>
+              <legend>Are you allergic to any medications?</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <label for="mc_3645" class="label-ada">type none, if don't have any allergies to medications</label>
+                  <textarea name="mc_3645" id="mc_3645" class="txt-ada"></textarea>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset">
+            <fieldset>
+              <legend>APrimary care physician?</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <label for="mc_13_med" class="label-ada">Name/City/Medical Center: </label>
+                  <input type="text" name="mc_13_med" id="mc_13_med" class="inp-ada">
+                </div>
+                <div class="ada-form-col">
+                  <label for="mc_223" class="label-ada">How long ago last visited?</label>
+                  <select name="mc_223" id="mc_223" class="select-ada">
+                    <option value="">Please select</option>
+                    <option value="1 week">1 week</option>
+                    <option value="1 month">1 month</option>
+                    <option value="3 months">3 months</option>
+                    <option value="6 months">6 months</option>
+                    <option value="1 year">1 year</option>
+                    <option value="2 years">2 years</option>
+                    <option value="greater than 3 years">Greater than 3 years</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset">
+            <fieldset>
+              <legend>Previous eye doctor</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <label for="mc_14_med" class="label-ada">Name/City/Medical Center: </label>
+                  <input type="text" name="mc_14_med" id="mc_14_med" class="inp-ada">
+                </div>
+                <div class="ada-form-col">
+                  <label for="mc_11" class="label-ada">How long ago last exam?</label>
+                  <select name="mc_11" id="mc_11" class="select-ada">
+                    <option value="">Please select</option>
+                    <option value="1 week">1 week</option>
+                    <option value="1 month">1 month</option>
+                    <option value="3 months">3 months</option>
+                    <option value="6 months">6 months</option>
+                    <option value="1 year">1 year</option>
+                    <option value="2 years">2 years</option>
+                    <option value="greater than 3 years">Greater than 3 years</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset ada-form-fieldset--full">
+            <fieldset>
+              <legend>Family history</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col ada-form-col--quarter">
+                  <label class="label-ada">Glaucoma</label>
+                  <div class="checkbox-ada-full">
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_216_med" value="No">No
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_216_med" value="Parents">Parents
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_216_med" value="Sibling">Sibling
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_216_med" value="Grandparents">Grandparents
+                    </label>
+                    <label class="checkbox-ada checkbox-ada-w-inp">
+                      <input type="checkbox" name="mc_216_med" value="other">Other
+                    </label>
+                  </div>
+                </div>
+                <div class="ada-form-col ada-form-col--quarter">
+                  <label class="label-ada">Cataracts</label>
+                  <div class="checkbox-ada-full">
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_217_med" value="No">No
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_217_med" value="Parents">Parents
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_217_med" value="Sibling">Sibling
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_217_med" value="Grandparents">Grandparents
+                    </label>
+                    <label class="checkbox-ada checkbox-ada-w-inp">
+                      <input type="checkbox" name="mc_217_med" value="other">Other
+                    </label>
+                  </div>
+                </div>
+                <div class="ada-form-col ada-form-col--quarter">
+                  <label class="label-ada">Macular Degeneration</label>
+                  <div class="checkbox-ada-full">
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_218_med" value="No">No
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_218_med" value="Parents">Parents
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_218_med" value="Sibling">Sibling
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_218_med" value="Grandparents">Grandparents
+                    </label>
+                    <label class="checkbox-ada checkbox-ada-w-inp">
+                      <input type="checkbox" name="mc_218_med" value="other">Other
+                    </label>
+                  </div>
+                </div>
+                <div class="ada-form-col ada-form-col--quarter">
+                  <label class="label-ada">Retinal Detachment</label>
+                  <div class="checkbox-ada-full">
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_219_med" value="No">No
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_219_med" value="Parents">Parents
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_219_med" value="Sibling">Sibling
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_219_med" value="Grandparents">Grandparents
+                    </label>
+                    <label class="checkbox-ada checkbox-ada-w-inp">
+                      <input type="checkbox" name="mc_219_med" value="other">Other
+                    </label>
+                  </div>
+                </div>
+                <div class="ada-form-col">
+                  <label for="mc_220" class="label-ada">Other eye diseases</label>
+                  <input type="text" name="mc_220" id="mc_220" class="inp-ada">
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset ada-form-fieldset--two-third">
+            <fieldset>
+              <legend>Have you ever been diagnosed or had any of the following?</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col ada-form-col--half">
+                  <div class="checkbox-ada-full">
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_16_med" value="No">Glaucoma
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_16_med" value="Parents">Cataracts
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_16_med" value="Sibling">Amblyopia
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_16_med" value="Grandparents">Macular Digeneration
+                    </label>
+                  </div>
+                </div>
+                <div class="ada-form-col ada-form-col--half">
+                  <div class="checkbox-ada-full">
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_16_med" value="No">Eye Turn
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_16_med" value="Parents">Retinal Detachment
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_16_med" value="Sibling">Keratokonus
+                    </label>
+                    <label class="checkbox-ada">
+                      <input type="checkbox" name="mc_16_med" value="Grandparents">Eye surgery
+                    </label>
+                  </div>
+                </div>
+                <div class="ada-form-col ada-form-col--half">
+                  <div class="checkbox-ada">
+                    <label class="checkbox-ada checkbox-ada-w-inp">
+                      <input type="checkbox" name="mc_16_med">Other<input type="text" name="mc_16_med" class="inp-ada">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset ada-form-fieldset--third">
+            <fieldset>
+              <legend>Vision correction</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col">
+                  <label for="mc_9" class="label-ada">Primary vision correction</label>
+                  <select name="mc_9" id="mc_9" class="select-ada">
+                    <option value="">Please select</option>
+                    <option value="Glasses">Glasses</option>
+                    <option value="Contacts">Contacts lenses</option>
+                    <option value="other">Other</option>
+                    <option value="None">None</option>
+                  </select>
+                </div>
+                <div class="ada-form-col">
+                  <label for="mc_12" class="label-ada">Type of contact lenses, if any</label>
+                  <select name="mc_12" id="mc_12" class="select-ada">
+                    <option value="">Please select</option>
+                    <option value="Soft">Soft</option>
+                    <option value="RGP">RGP lenses</option>
+                    <option value="Scleral">Scleral</option>
+                    <option value="CRT">CRT</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+
+          <div class="ada-form-fieldset ada-form-fieldset--full">
+            <fieldset>
+              <legend>Referral Information</legend>
+              <div class="ada-form-row">
+                <div class="ada-form-col ada-form-col--half">
+                  <label for="Referral" class="label-ada">How did you hear about us?:</label>
+                  <select name="Referral" id="Referral" class="select-ada">
+                    <option value="">
+                    </option><option value="Yelp">Yelp</option>
+                    <option value="Google">Google</option>
+                    <option value="">Friend/Family Referral</option>
+                    <option value="Insurance Referral">Insurance Referral</option>
+                    <option value="Nextdoor.com">Nextdoor.com</option>
+                    <option value="">Other</option>
+                  </select>
+                </div>
+                <div class="ada-form-col ada-form-col--half">
+                  <label for="patReferral" class="label-ada">If other or friend/family referral, who?:</label>
+                  <input type="text" name="patReferral" id="patReferral" class="inp-ada">
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="ada-form-fieldset ada-form-fieldset--full">
+            <div class="ada-form-row">
+              <div class="ada-form-col">
+                <button class="btn-control" type="submit">Submit</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </fieldset>
+    </div>
+
   </form>
 </div>
 

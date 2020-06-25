@@ -68,64 +68,90 @@ img {
     width: 100%;
     max-width: 1000px;
     margin: 50px auto;
+    background-color: #f2f2f2;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-.ada-form-steps{
-    display: flex;
-    flex-wrap: wrap;
-    border: 2px solid #000000;
-}
-.ada-form-step{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 33.333333333%;
-    height: 60px;
+.ada-form__logo{
+    padding-top: 30px;
     text-align: center;
-    color: #f2f2f2;
-    background-color: #000000;
-    border-right: 2px solid #000000;
 }
-.ada-form-step:last-child{
-    border-right: none;
-}
-.ada-form-step:hover,
-.ada-form-step_active{
-    background-color: #f2f2f2;
-    color: #993333;
+.ada-form__logo-link{
+    display: inline-block;
 }
 .ada-form__section{
     padding: 30px;
-    background-color: #f2f2f2;
 }
 legend{
     display: block;
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: 22px;
     color: #676767;
     text-align: center;
+}
+
+.clear:before,
+.clear:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.ada-form__fieldsets{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.ada-form-fieldset{
+    width: 50%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+.ada-form-fieldset--two-third{
+    width: 66.6666666%;
+}
+.ada-form-fieldset--third{
+    width: 33.3333333%;
+}
+.ada-form-fieldset--full{
+    width: 100%;
+}
+.ada-form-fieldset:last-child{
+    margin-bottom: 0;
+}
+/*.ada-form-fieldset--full + .ada-form-fieldset--two-third{*/
+/*    margin-bottom: 0;*/
+/*}*/
+fieldset fieldset legend{
+    font-size: 18px;
+    padding: 0 10px;
+}
+fieldset fieldset{
+    height: 100%;
+    border: 1px solid #000;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 .ada-form-row{
     display: flex;
     flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-bottom: 15px;
+    width: 100%;
 }
 .ada-form-row:last-child{
     margin-bottom: 0;
 }
 .ada-form-col{
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    min-width: 0;
-    max-width: 100%;
-    padding: 0 10px;
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+.ada-form-col--half{
+    width: 50%;
+}
+.ada-form-col--quarter{
+    width: 25%;
 }
 .label-ada{
-    display: block;
+    display: inline-block;
     margin-bottom: 10px;
     color: #676767;
 }
@@ -135,10 +161,14 @@ legend{
     width: 100%;
     height: 40px;
     border: 1px solid #cccccc;
-    background: #000000;
-    /*background: #FFFFFF;*/
-    color: #9e9e9e;
+    background: #FFFFFF;
+    color: #000000;
     padding: 10px;
+}
+.txt-ada{
+    height: 120px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    resize: none;
 }
 .select-ada:hover,
 .inp-ada:hover,
@@ -148,21 +178,25 @@ legend{
     transition: border-color 0.3s ease-in-out;
     border: 1px solid #aaa;
 }
-.radioboxes-ada{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    height: 40px;
-}
-.radiobox-ada{
-    margin-right: 15px;
-}
+.radioboxes-ada,
 .checkboxes-ada{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     height: 40px;
 }
+.checkbox-ada-full{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.checkbox-ada-full .checkbox-ada{
+    margin-bottom: 10px;
+}
+.checkbox-ada-full .checkbox-ada:last-child{
+    margin-bottom: 0;
+}
+.radiobox-ada,
 .checkbox-ada{
     margin-right: 15px;
 }
@@ -170,8 +204,10 @@ legend{
     margin-right: 5px;
 }
 .btn-control{
+    display: block;
     width: 200px;
     height: 60px;
+    margin: 0 auto;
     line-height: 60px;
     font-size: 18px;
     text-align: center;
@@ -181,4 +217,15 @@ legend{
 }
 .btn-control:hover{
     background-color: #000000;
+}
+.checkbox-ada-w-inp{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 0;
+}
+.checkbox-ada-w-inp .inp-ada{
+    flex: 1;
+    margin-left: 5px;
+    margin-right: 0;
 }
