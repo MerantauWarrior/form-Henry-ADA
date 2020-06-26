@@ -229,3 +229,8 @@ fieldset fieldset{
     margin-left: 5px;
     margin-right: 0;
 }
+:disabled,
+:disabled:hover{
+    border: 1px solid #cccccc;
+    background-color: #cccccc;
+}
