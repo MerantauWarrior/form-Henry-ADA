@@ -234,3 +234,10 @@ fieldset fieldset{
     border: 1px solid #cccccc;
     background-color: #cccccc;
 }
+.billing-half{
+    margin-left: 50%;
+    padding: 0 15px;
+}
+.ada-form-fieldset--billing{
+    margin-bottom: 0;/* This is for changing billing checkbox distance to the fieldset - default is 30px insted of 0 */
+}
